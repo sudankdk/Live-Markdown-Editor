@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Markdown Editor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="themeContainer">
+      <div class="themeBox">
+        <label for="themeBox">Theme:</label>
+        <select id="themeBox">
+          <optgroup label="Themes">
+            <option class="white" value="white">White</option>
+            <option class="grey" value="grey">Grey</option>
+            <option class="ice" value="ice">Ice</option>
+          </optgroup>
+        </select>
+        <button id="export-md">Export Markdown</button>
+        <button id="export-html">Export HTML</button>
+      </div>
+    </div>
+    <div class="box">
+      <textarea
+        id="markdown-input"
+        placeholder="Enter Your text here"
+      ></textarea>
+      <div id="html-preview"></div>
+    </div>
+    <script src="logic.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </body>
+</html>
